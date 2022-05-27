@@ -37,8 +37,10 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import pytorch from '../assets/pytorch.png';
+import linked from '../assets/linked.png';
 
 export default {
+  linked,
   aboutBrain,
   pytorch,
   tf,

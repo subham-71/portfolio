@@ -13,7 +13,7 @@ const Work = () => {
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
   useEffect(() => {
-    const query = '*[_type == "Works"]';
+    const query = '*[_type == "works"]';
 
     client.fetch(query).then((data) => {
       setWorks(data);
@@ -24,7 +24,7 @@ const Work = () => {
   const handleWorkFilter = (item) => {
     setActiveFilter(item);
     setAnimateCard([{ y: 100, opacity: 0 }]);
-
+    console.log(works);
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
@@ -38,10 +38,10 @@ const Work = () => {
 
   return (
     <>
-      <h2 className="head-text">My Creative <span>Portfolio</span> Section</h2>
+      <h2 className="head-text"> My <span>Projects</span> </h2>
 
       <div className="app__work-filter">
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
+        {['Machine Learning', 'Data Analysis', 'Web', 'Software', 'All'].map((item, index) => (
           <div
             key={index}
             onClick={() => handleWorkFilter(item)}
@@ -62,7 +62,7 @@ const Work = () => {
             <div
               className="app__work-img app__flex"
             >
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              <img src={urlFor(work.imgUrl)} alt={work.title} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}

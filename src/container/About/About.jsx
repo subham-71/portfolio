@@ -18,7 +18,7 @@ const About = () => {
 
   return (
     <>
-      <h2 className="head-text">  <span>About</span> <br />  </h2>
+      <h2 className="head-text">  <span>About</span> me <br />  </h2>
       Hi ! <br />
       I am Subham Subhasis Sahoo. I am in my pre-final year, pursuing UG in Computer Science and Engineering from IIT Ropar, India. <br />
       I am interested in artificial intelligence domain and its application in various use cases. I have worked in multiple open source computer vision and deep learning projects.
