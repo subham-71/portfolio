@@ -38,8 +38,10 @@ import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import pytorch from '../assets/pytorch.png';
 import linked from '../assets/linked.png';
+import github from '../assets/github.png';
 
 export default {
+  github,
   linked,
   aboutBrain,
   pytorch,

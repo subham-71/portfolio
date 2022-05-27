@@ -19,11 +19,7 @@ const About = () => {
   return (
     <>
       <h2 className="head-text">  <span>About</span> me <br />  </h2>
-      Hi ! <br />
-      I am Subham Subhasis Sahoo. I am in my pre-final year, pursuing UG in Computer Science and Engineering from IIT Ropar, India. <br />
-      I am interested in artificial intelligence domain and its application in various use cases. I have worked in multiple open source computer vision and deep learning projects.
-      Currently I am learning about Reinforcement Learning and its applications in UAV tracking.
-      <br /> I enjoy playing Badminton and cricket. Among indoor games, carrom tops the list.
+
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
