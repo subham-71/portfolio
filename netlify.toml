@@ -1,2 +1,1 @@
 NETLIFY_USE_YARN = "false"
-"packageManager": "npm"
